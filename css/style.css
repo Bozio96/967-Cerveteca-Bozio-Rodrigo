@@ -101,6 +101,18 @@
 .contenedorCards .card .contTxtCard{
   color: black;
 }
+
+.contenedorCards .card .contBtnCard .verMas{
+  background-image: linear-gradient(to right, rgb(180, 57, 57), rgb(43, 22, 22));
+  border-radius: 5px;
+  color:rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 3px;
+}
+
+.contenedorCards .card .contBtnCard .verMas:hover{
+  background-image: linear-gradient(to right, rgb(160, 110, 110), rgb(199, 67, 67));
+}
 /* -----------------------------------PROMOS --------------------------------------*/
 .cartelAlerta{
   background-image: radial-gradient(rgb(70, 3, 3),rgb(233, 6, 6)) ;
