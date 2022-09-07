@@ -1,0 +1,78 @@
+@media (min-width: 768px) {
+    .gridContainer {  display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 20vh 30vh 1fr 290px;
+      grid-template-areas:
+        "header header"
+        "banner banner"
+        "section section"
+        "footer iframe";
+    }
+    
+    .header { 
+      grid-area: header; 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  
+    .header img{
+      width: 100px;
+      border-radius: 50px;
+    }
+  
+    .header ul {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .header ul li a{
+      font-size: 1rem;
+      margin: 10px;
+    }
+    .banner { 
+      grid-area: banner; 
+    }
+    .section { 
+      grid-area: section;
+    }
+    .contenedorCards{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .footer { 
+      grid-area: footer;
+      align-items: center;
+     }
+     /* --------------------------------------CLUB DE VINOS--------------------------------- */
+     .contClubDeVinos {  
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 50px 1fr 1fr;
+      grid-template-areas:
+        "titulo titulo"
+        "imgClub contenido"
+        "formulario formulario";
+    }
+    
+    .titulo { 
+      grid-area: titulo; 
+    }
+    
+    .imgClub { 
+      grid-area: imgClub; 
+    }
+    
+    .contenido { 
+      grid-area: contenido; 
+    }
+    
+    .formulario { 
+      grid-area: formulario; 
+    }
+  
+  }
+  

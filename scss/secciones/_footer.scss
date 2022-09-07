@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer h4{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+  }
+  .footer ul{
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 15px;
+      margin: 10px 0px;
+  }
+  
+  .contenedorHorarios ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+  }
+  .contenedorPagos ul li img{
+    width: 28px;
+    margin: 2px;
+  }
+  
