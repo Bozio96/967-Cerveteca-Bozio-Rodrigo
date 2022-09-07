@@ -1,0 +1,21 @@
+1-Comprimí las img, las subi a la nube y las linkié desde ahi
+
+2-Coloque meta keywords:
+	index:vinoteca, 967, cerveteca, vino, cerveza, santa teresa
+	productos:vino, cerveza, espumante, champagne	
+	promos:promo, packs, cerveza, fernet
+	club:vinoteca, vino, club, beneficio, cata
+	contactanos: vinoteca, cerveteca, 967, santa teresa, contacto
+3-Coloque meta description:
+	index:En ésta sucursal de red967 cerveteca, encontrarás variedad de bebidas y demás productos
+	productos:Ofrecemos una amplia gama de productos entre los cuales encontrarás cervezas, vinos y más.
+	promos:Nuestras promos en efectivo son muy accesibles y variadas para todos los gustos
+	club:El Club del Vino es un beneficio mensual a nuestros socios. Vinos seleccionados
+	contactanos:Información de contacto de 967 Cerveteca - Santa Teresa
+4-Ordené la jerarquía y repetición de títulos h1,h2,h3 y h4
+
+5-Cambie los titles
+
+6-Agregué un xml
+
+7-
