@@ -1,91 +1,39 @@
 @media (min-width: 1024px) {
-    .gridContainer {  display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 27vh 45vh 1fr 290px;
-      grid-template-areas:
-        "header header"
-        "banner banner"
-        "section section"
-        "footer iframe";
-    }
-    
-    .header { 
-      grid-area: header; 
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-end;
-    }
-  
-    .header img{
-      width: 140px;
-      border-radius: 50px;
-    }
-  
-    .header ul {
-      width: 100%;
-      justify-content: space-evenly;
-    }
-  
-    .header ul li a{
-      font-size: 18px;
-      margin: 15px;
-    }
-    
-    .banner { 
-      grid-area: banner; 
-    }
-  
-    .banner img{
-      height: 230px;
-    }
-    
-    .section { 
-      grid-area: section;
-    }
-  
-    /*  */
-    
-    .contenedorCards{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .footer { 
-      grid-area: footer;
-      align-items: flex-end;
-      margin: 20px;
-     }
-    
-    .iframe { grid-area: iframe; }
-  
-    /* ---------------------CLUB DE VINOS---------------------- */
-    .contClubDeVinos {  
-      display: grid;
-      grid-template-columns: 40% 60%;
-      grid-template-rows: 50px 1fr 1fr;
-      grid-template-areas:
-        "titulo titulo"
-        "imgClub contenido"
-        "formulario formulario";
-    }
-    
-    .titulo { 
-      grid-area: titulo; 
-    }
-    
-    .imgClub { 
-      grid-area: imgClub; 
-    }
-    
-    .contenido { 
-      grid-area: contenido; 
-    }
-    
-    .formulario { 
-      grid-area: formulario; 
-    }
-    
+    body{
+      .section{
+        // grid-area: section;
+        .contenedorCards{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        .contClubDeVinos {  
+          display: grid;
+          grid-template-columns: 40% 60%;
+          grid-template-rows: 50px 1fr 1fr;
+          grid-template-areas:
+            "titulo titulo"
+            "imgClub contenido"
+            "formulario formulario";
+          .titulo { 
+            grid-area: titulo; 
+          }
+          .imgClub { 
+            grid-area: imgClub; 
+          }
+          .contenido { 
+            grid-area: contenido; 
+          }
+          .formulario { 
+            grid-area: formulario; 
+          }
+        }
+      }
+      .footer { 
+        align-items: flex-end;
+        margin: 20px;
+       }
+    } 
   }
   

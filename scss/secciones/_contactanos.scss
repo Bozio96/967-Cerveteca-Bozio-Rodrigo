@@ -1,33 +1,4 @@
-.contClubDeVinos {  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 340px 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "titulo titulo"
-    "imgClub imgClub"
-    "contenido contenido"
-    "formulario formulario";
-  .titulo{
-    grid-area: titulo; 
-    margin-top: 10px;  
-  }
-  .imgClub{
-    grid-area: imgClub;
-    .imgClubDelVino{
-      width: 90%;
-      margin: 10px;
-    }
-  }
-  .contenido{
-    grid-area: contenido; 
-    margin: 20px 0px;
-  }
-  .formulario{
-    grid-area: formulario;
-  }
-  .contenedorFormFlex{
+.contenedorFormFlex{
     display: flex;
     justify-content: center;
     .form{
@@ -54,5 +25,4 @@
         }
       }
     }
-  }
-}
+  }  

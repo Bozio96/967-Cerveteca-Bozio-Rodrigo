@@ -1,1 +1,42 @@
-//RESETEO GENERAL 
+%reseteo{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+%estiloNav{
+    font-weight: bolder;
+    color: rgb(155, 148, 148);
+}
+
+%estiloCard{
+    border-radius: 20px;
+    width: 250px;
+    background-image: linear-gradient(45deg, white, rgb(61, 61, 61));
+    margin: 5px;
+    padding: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+%tituloFooter{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+%listaFooter{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+@mixin estiloForm($colorFondo, $radio){
+    background-color: $colorFondo;
+    border-radius: $radio;
+}

@@ -14,6 +14,6 @@
 	contactanos:Información de contacto de 967 Cerveteca - Santa Teresa
 4-Ordené la jerarquía y repetición de títulos h1,h2,h3 y h4
 
-5-Cambie los titles
+5-Cambie todos los titles
 
 6-Agregué un xml

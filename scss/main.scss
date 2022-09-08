@@ -1,17 +1,19 @@
-//VARIABLES PRIMERO
+//VARIABLES 
+@import './variables/extend';
 
-//SECCIONES SEGUNDO
+//SECCIONES 
 @import './secciones/general';
 @import './secciones/header';
 @import './secciones/contenidoPrincipal';
 @import './secciones/promos';
 @import './secciones/club';
+@import './secciones/contactanos';
 @import './secciones/iframe';
 @import './secciones/footer';
 
-//KEYFRAMES TERCERO
+//KEYFRAMES 
 @import './keyframes/keyframes';
 
-//MEDIA QUERIES CUARTO
+//MEDIA QUERIES 
 @import './mediaQueries/tablet';
 @import './mediaQueries/desktop';
