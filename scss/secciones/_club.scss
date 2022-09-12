@@ -27,32 +27,5 @@
   .formulario{
     grid-area: formulario;
   }
-  .contenedorFormFlex{
-    display: flex;
-    justify-content: center;
-    .form{
-      display: flex;
-      flex-direction: column;
-      @include estiloForm(rgba(104, 16, 16, 0.61), 10px);
-      width: 90%;
-      margin: 30px;
-      input{
-        display: block;
-        margin: 10px;
-        background-color: black;
-        color: white;
-        text-align: center;
-        &:hover{
-          background-color: rgb(32, 32, 32);
-        }
-      }
-      textarea{
-        margin: 10px;
-        background-color: rgba(82, 7, 7, 0.678);
-        &:hover{
-          background-color: rgba(97, 12, 12, 0.678);
-        }
-      }
-    }
-  }
+  @include recuadro();
 }
