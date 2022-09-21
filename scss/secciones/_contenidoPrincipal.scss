@@ -24,7 +24,7 @@ body{
             width: 230px;
             border-radius: 20px;
             &:hover{
-              transform: scale(1,1.1) translateY(15px);
+              transform: skew(2deg,-2deg);
               transition: .3s;
             }
           }

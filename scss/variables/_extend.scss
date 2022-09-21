@@ -85,10 +85,17 @@
       padding: 10px;
       justify-content: flex-start;
       align-items: center;
+      &:hover{
+        border: 2px rgb(168, 20, 20) dotted;
+      }
       img{
         width: 170px;
         border-radius: 5px;
         border: 2px black solid;
+        &:hover{
+          transform: skew(2deg,-2deg);
+          transition: .3s;
+        }
       }
       .textoRegalo{
         display: flex;
@@ -106,8 +113,13 @@
     justify-content: $justificacion;
     img{
       width: 140px;
-      margin: 5px
-    };
+      margin: 5px;
+      border:2px black solid;
+      &:hover{
+        transform: skew(2deg,-2deg);
+        transition: .3s;
+      }  
+    }
   
 }
 

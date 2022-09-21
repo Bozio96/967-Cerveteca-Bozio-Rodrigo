@@ -70,10 +70,15 @@ body {
         padding: 10px;
         justify-content: flex-start;
         align-items: center; }
+        body .section .contenedorPrincipal .regalo:hover {
+          border: 2px #a81414 dotted; }
         body .section .contenedorPrincipal .regalo img {
           width: 170px;
           border-radius: 5px;
           border: 2px black solid; }
+          body .section .contenedorPrincipal .regalo img:hover {
+            transform: skew(2deg, -2deg);
+            transition: .3s; }
         body .section .contenedorPrincipal .regalo .textoRegalo {
           display: flex;
           flex-direction: column;
@@ -89,7 +94,7 @@ body {
         width: 230px;
         border-radius: 20px; }
         body .section .contenedorCards .card .contImgCard img:hover {
-          transform: scale(1, 1.1) translateY(15px);
+          transform: skew(2deg, -2deg);
           transition: .3s; }
       body .section .contenedorCards .card .contTxtCard {
         color: black; }
@@ -149,13 +154,21 @@ body {
     justify-content: flex-end; }
     .promociones .fotoIzq img {
       width: 140px;
-      margin: 5px; }
+      margin: 5px;
+      border: 2px black solid; }
+      .promociones .fotoIzq img:hover {
+        transform: skew(2deg, -2deg);
+        transition: .3s; }
   .promociones .fotoDer {
     display: flex;
     justify-content: flex-start; }
     .promociones .fotoDer img {
       width: 140px;
-      margin: 5px; }
+      margin: 5px;
+      border: 2px black solid; }
+      .promociones .fotoDer img:hover {
+        transform: skew(2deg, -2deg);
+        transition: .3s; }
   .promociones .descrip {
     display: flex;
     flex-direction: column;
@@ -279,10 +292,15 @@ body {
         padding: 10px;
         justify-content: flex-start;
         align-items: center; }
+        body .section .contenedorPrincipal .regalo:hover {
+          border: 2px #a81414 dotted; }
         body .section .contenedorPrincipal .regalo img {
           width: 170px;
           border-radius: 5px;
           border: 2px black solid; }
+          body .section .contenedorPrincipal .regalo img:hover {
+            transform: skew(2deg, -2deg);
+            transition: .3s; }
         body .section .contenedorPrincipal .regalo .textoRegalo {
           display: flex;
           flex-direction: column;
@@ -348,10 +366,15 @@ body {
       padding: 10px;
       justify-content: flex-start;
       align-items: center; }
+      body .section .contenedorPrincipal .regalo:hover {
+        border: 2px #a81414 dotted; }
       body .section .contenedorPrincipal .regalo img {
         width: 170px;
         border-radius: 5px;
         border: 2px black solid; }
+        body .section .contenedorPrincipal .regalo img:hover {
+          transform: skew(2deg, -2deg);
+          transition: .3s; }
       body .section .contenedorPrincipal .regalo .textoRegalo {
         display: flex;
         flex-direction: column;
