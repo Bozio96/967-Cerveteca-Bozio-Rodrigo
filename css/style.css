@@ -123,32 +123,32 @@ body {
   grid-template-areas: "promo1 descripcionPromo1" "descripcionPromo2 promo2" "promo3 descripcionPromo3" "descripcionPromo4 promo4"; }
   .promociones .promo1 {
     grid-area: promo1;
-    background-image: radial-gradient(#dbb5b5, #353333); }
+    background-image: radial-gradient(#663d3d, #353333); }
   .promociones .descripcionPromo1 {
     grid-area: descripcionPromo1;
-    background-image: radial-gradient(#dbb5b5, #551c1c);
-    color: black; }
+    background-image: radial-gradient(#663d3d, #551c1c);
+    color: white; }
   .promociones .descripcionPromo2 {
     grid-area: descripcionPromo2;
-    background-image: radial-gradient(#dbb5b5, #551c1c);
-    color: black; }
+    background-image: radial-gradient(#663d3d, #551c1c);
+    color: white; }
   .promociones .promo2 {
     grid-area: promo2;
-    background-image: radial-gradient(#dbb5b5, #353333); }
+    background-image: radial-gradient(#663d3d, #353333); }
   .promociones .promo3 {
     grid-area: promo3;
-    background-image: radial-gradient(#dbb5b5, #353333); }
+    background-image: radial-gradient(#663d3d, #353333); }
   .promociones .descripcionPromo3 {
     grid-area: descripcionPromo3;
-    background-image: radial-gradient(#dbb5b5, #551c1c);
-    color: black; }
+    background-image: radial-gradient(#663d3d, #551c1c);
+    color: white; }
   .promociones .descripcionPromo4 {
     grid-area: descripcionPromo4;
-    background-image: radial-gradient(#dbb5b5, #551c1c);
-    color: black; }
+    background-image: radial-gradient(#663d3d, #551c1c);
+    color: white; }
   .promociones .promo4 {
     grid-area: promo4;
-    background-image: radial-gradient(#dbb5b5, #353333); }
+    background-image: radial-gradient(#663d3d, #353333); }
   .promociones .fotoIzq {
     display: flex;
     justify-content: flex-end; }

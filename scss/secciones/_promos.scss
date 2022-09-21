@@ -22,12 +22,12 @@
     .descripcionPromo1 { 
       grid-area: descripcionPromo1;
       @include colorFondo(rgb(85, 28, 28)); 
-      color: black;
+      color: white;
     }
     .descripcionPromo2 { 
       grid-area: descripcionPromo2; 
       @include colorFondo(rgb(85, 28, 28));
-      color: black;
+      color: white;
     }
     .promo2 { 
       grid-area: promo2; 
@@ -40,12 +40,12 @@
     .descripcionPromo3 { 
       grid-area: descripcionPromo3;
       @include colorFondo(rgb(85, 28, 28)); 
-      color: black;
+      color: white;
     }
     .descripcionPromo4 { 
       grid-area: descripcionPromo4; 
       @include colorFondo(rgb(85, 28, 28));
-      color: black;
+      color: white;
     }
     .promo4 { 
       grid-area: promo4; 
