@@ -5,4 +5,66 @@
     animation-duration: 2s;
     animation-delay: .3s;
   }
+
+.promociones {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "promo1 descripcionPromo1"
+    "descripcionPromo2 promo2"
+    "promo3 descripcionPromo3"
+    "descripcionPromo4 promo4";
+    .promo1 { 
+      grid-area: promo1;
+      @include colorFondo(rgb(53, 51, 51));
+    }
+    .descripcionPromo1 { 
+      grid-area: descripcionPromo1;
+      @include colorFondo(rgb(85, 28, 28)); 
+      color: black;
+    }
+    .descripcionPromo2 { 
+      grid-area: descripcionPromo2; 
+      @include colorFondo(rgb(85, 28, 28));
+      color: black;
+    }
+    .promo2 { 
+      grid-area: promo2; 
+      @include colorFondo(rgb(53, 51, 51));
+    }
+    .promo3 { 
+      grid-area: promo3; 
+      @include colorFondo(rgb(53, 51, 51));
+    }
+    .descripcionPromo3 { 
+      grid-area: descripcionPromo3;
+      @include colorFondo(rgb(85, 28, 28)); 
+      color: black;
+    }
+    .descripcionPromo4 { 
+      grid-area: descripcionPromo4; 
+      @include colorFondo(rgb(85, 28, 28));
+      color: black;
+    }
+    .promo4 { 
+      grid-area: promo4; 
+      @include colorFondo(rgb(53, 51, 51));
+    }
+    
+    .fotoIzq{
+      @include fotoJustificada(flex-end)
+    }
+    .fotoDer{
+      @include fotoJustificada(flex-start)
+    }
+    .descrip{
+     @include textoJustificado(center)
+    }
+   
+  }
+ 
+  
+
+  
   

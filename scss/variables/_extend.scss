@@ -40,7 +40,7 @@
     background-color: $colorFondo;
     border-radius: $radio;
 }
-@mixin recuadro(){
+@mixin recuadro($tamanio){
     .contenedorFormFlex{
         display: flex;
         justify-content: center;
@@ -48,7 +48,7 @@
           display: flex;
           flex-direction: column;
           @include estiloForm(rgba(104, 16, 16, 0.61), 10px);
-          width: 90%;
+          width: $tamanio;
           margin: 30px;
           input{
             display: block;
@@ -69,4 +69,64 @@
           }
         }
       }  
+}
+
+@mixin contenidoPrincipalDesktopTablet($direction, $textDirection) {
+  .contenedorPrincipal{
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    .regalo{
+      margin: 10px;
+      display: flex;
+      flex-direction: $direction;
+      border: 2px rgb(65, 43, 43) dotted;
+      border-radius: 15px;
+      padding: 10px;
+      justify-content: flex-start;
+      align-items: center;
+      img{
+        width: 170px;
+        border-radius: 5px;
+        border: 2px black solid;
+      }
+      .textoRegalo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: $textDirection;
+        margin: 10px;
+      }
+    }
+  }
+}
+@mixin fotoJustificada($justificacion){
+  
+    display: flex;
+    justify-content: $justificacion;
+    img{
+      width: 140px;
+      margin: 5px
+    };
+  
+}
+
+@mixin textoJustificado($justificacion){
+  
+    display: flex;
+    flex-direction: column;
+    align-items: $justificacion;
+    justify-content: center;
+  
+}
+
+@mixin imagenPromo($tamanio){
+  img{
+    width: $tamanio;
+    margin: 10px;
+  }
+}
+
+@mixin colorFondo($color){
+  background-image: radial-gradient(rgb(219, 181, 181), $color) ;
 }

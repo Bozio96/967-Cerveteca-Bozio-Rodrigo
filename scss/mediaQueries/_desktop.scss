@@ -8,6 +8,53 @@
           flex-wrap: wrap;
           justify-content: space-around;
         }
+
+        @include contenidoPrincipalDesktopTablet(row, flex-start);
+
+        .promociones {  
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "promo1 descripcionPromo1 descripcionPromo2 promo2"
+            "promo3 descripcionPromo3 descripcionPromo4 promo4";
+          .promo1 { 
+            grid-area: promo1; 
+            @include imagenPromo(250px);
+          }
+          .descripcionPromo1 { 
+            grid-area: descripcionPromo1;
+            @include textoJustificado(center);
+          }    
+          .descripcionPromo2 { 
+            grid-area: descripcionPromo2;
+            @include textoJustificado(center);
+           }    
+          .promo2 {
+             grid-area: promo2;
+             @include imagenPromo(250px);
+            }
+           }    
+          .promo3 { 
+            grid-area: promo3;
+            @include imagenPromo(250px);
+          }    
+          .descripcionPromo3 {
+             grid-area: descripcionPromo3;
+             @include textoJustificado(center);
+           }    
+          .descripcionPromo4 {
+             grid-area: descripcionPromo4;
+             @include textoJustificado(center);
+           }    
+          .promo4 { 
+            grid-area: promo4;
+            @include imagenPromo(250px);
+          }
+        }
+
         .contClubDeVinos {  
           display: grid;
           grid-template-columns: 40% 60%;
@@ -29,11 +76,14 @@
             grid-area: formulario; 
           }
         }
+
+        @include recuadro(50%);
       }
       .footer { 
         align-items: flex-end;
         margin: 20px;
-       }
-    } 
-  }
+      }
+} 
+  
+
   

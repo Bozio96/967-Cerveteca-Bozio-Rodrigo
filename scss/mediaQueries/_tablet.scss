@@ -8,6 +8,8 @@
           flex-wrap: wrap;
           justify-content: space-evenly;  
         }
+        @include contenidoPrincipalDesktopTablet(row, center);
+
         .contClubDeVinos {  
           display: grid;
           grid-template-columns: 40% 60%;
@@ -29,6 +31,8 @@
               grid-area: formulario; 
             }
         }
+
+        @include recuadro(60%);
       }
       .footer { 
         grid-area: footer;

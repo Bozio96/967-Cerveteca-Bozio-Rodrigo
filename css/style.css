@@ -57,6 +57,29 @@ body {
       margin-top: 35px; }
     body .section h3 {
       margin-top: 15px; }
+    body .section .contenedorPrincipal {
+      display: flex;
+      margin: 50px;
+      flex-direction: column; }
+      body .section .contenedorPrincipal .regalo {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        border: 2px #412b2b dotted;
+        border-radius: 15px;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center; }
+        body .section .contenedorPrincipal .regalo img {
+          width: 170px;
+          border-radius: 5px;
+          border: 2px black solid; }
+        body .section .contenedorPrincipal .regalo .textoRegalo {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          margin: 10px; }
     body .section .contenedorCards {
       display: flex;
       flex-direction: column;
@@ -88,10 +111,61 @@ body {
   animation-duration: 2s;
   animation-delay: .3s; }
 
+.promociones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "promo1 descripcionPromo1" "descripcionPromo2 promo2" "promo3 descripcionPromo3" "descripcionPromo4 promo4"; }
+  .promociones .promo1 {
+    grid-area: promo1;
+    background-image: radial-gradient(#dbb5b5, #353333); }
+  .promociones .descripcionPromo1 {
+    grid-area: descripcionPromo1;
+    background-image: radial-gradient(#dbb5b5, #551c1c);
+    color: black; }
+  .promociones .descripcionPromo2 {
+    grid-area: descripcionPromo2;
+    background-image: radial-gradient(#dbb5b5, #551c1c);
+    color: black; }
+  .promociones .promo2 {
+    grid-area: promo2;
+    background-image: radial-gradient(#dbb5b5, #353333); }
+  .promociones .promo3 {
+    grid-area: promo3;
+    background-image: radial-gradient(#dbb5b5, #353333); }
+  .promociones .descripcionPromo3 {
+    grid-area: descripcionPromo3;
+    background-image: radial-gradient(#dbb5b5, #551c1c);
+    color: black; }
+  .promociones .descripcionPromo4 {
+    grid-area: descripcionPromo4;
+    background-image: radial-gradient(#dbb5b5, #551c1c);
+    color: black; }
+  .promociones .promo4 {
+    grid-area: promo4;
+    background-image: radial-gradient(#dbb5b5, #353333); }
+  .promociones .fotoIzq {
+    display: flex;
+    justify-content: flex-end; }
+    .promociones .fotoIzq img {
+      width: 140px;
+      margin: 5px; }
+  .promociones .fotoDer {
+    display: flex;
+    justify-content: flex-start; }
+    .promociones .fotoDer img {
+      width: 140px;
+      margin: 5px; }
+  .promociones .descrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
 .contClubDeVinos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 340px 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "titulo titulo" "imgClub imgClub" "contenido contenido" "formulario formulario"; }
@@ -102,10 +176,10 @@ body {
     grid-area: imgClub; }
     .contClubDeVinos .imgClub .imgClubDelVino {
       width: 90%;
-      margin: 10px; }
+      margin: 5px; }
   .contClubDeVinos .contenido {
     grid-area: contenido;
-    margin: 20px 0px; }
+    margin: 10px 0px; }
   .contClubDeVinos .formulario {
     grid-area: formulario; }
   .contClubDeVinos .contenedorFormFlex {
@@ -192,6 +266,29 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly; }
+    body .section .contenedorPrincipal {
+      display: flex;
+      margin: 50px;
+      flex-direction: column; }
+      body .section .contenedorPrincipal .regalo {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        border: 2px #412b2b dotted;
+        border-radius: 15px;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center; }
+        body .section .contenedorPrincipal .regalo img {
+          width: 170px;
+          border-radius: 5px;
+          border: 2px black solid; }
+        body .section .contenedorPrincipal .regalo .textoRegalo {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          margin: 10px; }
     body .section .contClubDeVinos {
       display: grid;
       grid-template-columns: 40% 60%;
@@ -205,6 +302,29 @@ body {
         grid-area: contenido; }
       body .section .contClubDeVinos .formulario {
         grid-area: formulario; }
+    body .section .contenedorFormFlex {
+      display: flex;
+      justify-content: center; }
+      body .section .contenedorFormFlex .form {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(104, 16, 16, 0.61);
+        border-radius: 10px;
+        width: 60%;
+        margin: 30px; }
+        body .section .contenedorFormFlex .form input {
+          display: block;
+          margin: 10px;
+          background-color: black;
+          color: white;
+          text-align: center; }
+          body .section .contenedorFormFlex .form input:hover {
+            background-color: #202020; }
+        body .section .contenedorFormFlex .form textarea {
+          margin: 10px;
+          background-color: rgba(82, 7, 7, 0.678); }
+          body .section .contenedorFormFlex .form textarea:hover {
+            background-color: rgba(97, 12, 12, 0.678); }
   body .footer {
     grid-area: footer;
     align-items: center; } }
@@ -215,19 +335,116 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-  body .section .contClubDeVinos {
+  body .section .contenedorPrincipal {
+    display: flex;
+    margin: 50px;
+    flex-direction: column; }
+    body .section .contenedorPrincipal .regalo {
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      border: 2px #412b2b dotted;
+      border-radius: 15px;
+      padding: 10px;
+      justify-content: flex-start;
+      align-items: center; }
+      body .section .contenedorPrincipal .regalo img {
+        width: 170px;
+        border-radius: 5px;
+        border: 2px black solid; }
+      body .section .contenedorPrincipal .regalo .textoRegalo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 10px; }
+  body .section .promociones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "promo1 descripcionPromo1 descripcionPromo2 promo2" "promo3 descripcionPromo3 descripcionPromo4 promo4"; }
+    body .section .promociones .promo1 {
+      grid-area: promo1; }
+      body .section .promociones .promo1 img {
+        width: 250px;
+        margin: 10px; }
+    body .section .promociones .descripcionPromo1 {
+      grid-area: descripcionPromo1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    body .section .promociones .descripcionPromo2 {
+      grid-area: descripcionPromo2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    body .section .promociones .promo2 {
+      grid-area: promo2; }
+      body .section .promociones .promo2 img {
+        width: 250px;
+        margin: 10px; }
+  body .section .promo3 {
+    grid-area: promo3; }
+    body .section .promo3 img {
+      width: 250px;
+      margin: 10px; }
+  body .section .descripcionPromo3 {
+    grid-area: descripcionPromo3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  body .section .descripcionPromo4 {
+    grid-area: descripcionPromo4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  body .section .promo4 {
+    grid-area: promo4; }
+    body .section .promo4 img {
+      width: 250px;
+      margin: 10px; }
+  body .contClubDeVinos {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 50px 1fr 1fr;
     grid-template-areas: "titulo titulo" "imgClub contenido" "formulario formulario"; }
-    body .section .contClubDeVinos .titulo {
+    body .contClubDeVinos .titulo {
       grid-area: titulo; }
-    body .section .contClubDeVinos .imgClub {
+    body .contClubDeVinos .imgClub {
       grid-area: imgClub; }
-    body .section .contClubDeVinos .contenido {
+    body .contClubDeVinos .contenido {
       grid-area: contenido; }
-    body .section .contClubDeVinos .formulario {
+    body .contClubDeVinos .formulario {
       grid-area: formulario; }
-  body .footer {
+  body .contenedorFormFlex {
+    display: flex;
+    justify-content: center; }
+    body .contenedorFormFlex .form {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(104, 16, 16, 0.61);
+      border-radius: 10px;
+      width: 50%;
+      margin: 30px; }
+      body .contenedorFormFlex .form input {
+        display: block;
+        margin: 10px;
+        background-color: black;
+        color: white;
+        text-align: center; }
+        body .contenedorFormFlex .form input:hover {
+          background-color: #202020; }
+      body .contenedorFormFlex .form textarea {
+        margin: 10px;
+        background-color: rgba(82, 7, 7, 0.678); }
+        body .contenedorFormFlex .form textarea:hover {
+          background-color: rgba(97, 12, 12, 0.678); }
+  .footer {
     align-items: flex-end;
     margin: 20px; } }

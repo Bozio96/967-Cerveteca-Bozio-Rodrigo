@@ -1,7 +1,7 @@
 .contClubDeVinos {  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 340px 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -17,15 +17,15 @@
     grid-area: imgClub;
     .imgClubDelVino{
       width: 90%;
-      margin: 10px;
+      margin: 5px;
     }
   }
   .contenido{
     grid-area: contenido; 
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   .formulario{
     grid-area: formulario;
   }
-  @include recuadro();
+  @include recuadro(90%);
 }
