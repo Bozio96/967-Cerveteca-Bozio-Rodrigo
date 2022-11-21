@@ -108,14 +108,18 @@
       <div class="formulario">
         <h3>Inscribite aquí: </h3>
       <div class="contenedorFormFlex">
-        <form class="form" action="#">
-          <input type="text" placeholder="Ingrese su nombre" name="nombre" required>
-          <input type="text" placeholder="Ingrese su apellido" name="apellido" required>
-          <input type="tel" placeholder="Ingrese un numero de telefono" name="telefono">
-          <input type="email" placeholder="Ingrese un mail de contacto" name="Correo" required>
+        <form id="form" class="form" action="#">
+          <input id="nombre" type="text" placeholder="Ingrese su nombre" name="nombre" required>
+          <input id="apellido" type="text" placeholder="Ingrese su apellido" name="apellido" required>
+          <input id="telefono" type="tel" placeholder="Ingrese un numero de telefono" name="telefono">
+          <input id="correo" type="email" placeholder="Ingrese un mail de contacto" name="Correo" required>
           <input type="submit" name="enviar" id="enviar">
         </form>
       </div>
+
+      <div id="parrafoCompletar"></div>
+      <div id="correoDePrueba"></div>
+
       </div>
     </div>
   </section>
@@ -149,6 +153,6 @@
       </div>
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
- 
+  <script src="../js/main.js"></script>
 </body>
 </html>
